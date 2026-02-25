@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGScopes – Coming Soon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: #0f2027;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Animated gradient glow */
+.gradient-bg {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at 40% 40%, #00e0c6, #203a43 60%);
+    filter: blur(160px);
+    opacity: 0.35;
+    animation: slowScale 10s ease-in-out infinite alternate;
+}
+
+@keyframes slowMove {
+    0% { transform: translate(-100px, -50px) scale(1); }
+    50% { transform: translate(100px, 50px) scale(1.1); }
+    100% { transform: translate(-50px, 80px) scale(1); }
+}
+
+@keyframes slowScale {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(0.8); }
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    max-width: 900px;
+    padding: 40px;
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.subtitle {
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.tagline {
+    margin-top: 40px;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.highlight {
+    color: #00e0c6;
+    font-weight: 600;
+}
+
+footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+footer a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+    h1 { font-size: 52px; }
+    .tagline { font-size: 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="gradient-bg"></div>
+
+<div class="container">
+    <div class="subtitle">COMING SOON</div>
+    <h1>NGScopes</h1>
+
+    <div class="tagline">
+        <span class="highlight">Lightweight TTS Robotics</span><br>
+        <span class="highlight">»»</span> Seamless Integration into Current Clinical Workflows <span class="highlight">««</span>
+    </div>
+</div>
+
+<footer>
+    <a href="#">LinkedIn</a>
+    <a href="#">Contact</a>
+    <a href="#">Imprint</a>
+</footer>
+
+</body>
+</html>
