@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGScopes – Coming Soon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    animation: fadeIn 1.8s ease forwards;
+    opacity: 0;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+
+.tagline {
+    margin-top: 40px;
+    font-size: 26px;
+    font-weight: 300;
+    max-width: 700px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight {
+    color: #00e0c6;
+    font-weight: 600;
+}
+
+footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+footer a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.6;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@media (max-width: 900px) {
+    h1 { font-size: 52px; }
+    .tagline { font-size: 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="subtitle">COMING SOON</div>
+    <h1>NGScopes</h1>
+
+    <div class="tagline">
+        <span class="highlight">Lightweight TTS Robotics</span><br>
+        Seamless Integration into Current Workflows
+    </div>
+</div>
+
+<footer>
+    <a href="#">LinkedIn</a>
+    <a href="mailto:contact@ngscopes.com">Contact</a>
+    <a href="#">Imprint</a>
+</footer>
+
+</body>
+</html>
