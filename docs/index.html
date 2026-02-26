@@ -26,7 +26,7 @@ body {
     position: absolute;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle at 40% 40%, #00e0c6, #203a43 60%);
+    background: radial-gradient(circle at center, #00e0c6, #203a43 60%);
     filter: blur(160px);
     opacity: 0.35;
     animation: slowScale 10s ease-in-out infinite alternate;
@@ -39,9 +39,9 @@ body {
 }
 
 @keyframes slowScale {
-    0% { transform: scale(0.8); }
-    50% { transform: scale(1.3); }
-    100% { transform: scale(0.8); }
+    0% { transform: scale(0.9); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(0.9); }
 }
 
 .container {
