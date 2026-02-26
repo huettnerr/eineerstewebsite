@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imprint – NGScopes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0f2027;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Same animated gradient */
+.gradient-bg {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at 40% 40%, #00e0c6, #203a43 60%);
+    filter: blur(160px);
+    opacity: 0.35;
+    animation: slowScale 10s ease-in-out infinite alternate;
+}
+
+@keyframes slowScale {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(0.8); }
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 60px 40px;
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.section {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.section strong {
+    font-weight: 600;
+}
+
+a {
+    color: #00e0c6;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.back {
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="gradient-bg"></div>
+
+<div class="container">
+    <h1>Imprint</h1>
+
+    <div class="section">
+        <strong>Information according to § 5 TMG</strong><br><br>
+		Jonas Steinhäuser-Meerz<br>
+		Polenzstraße 3<br>
+		01277 Dresden<br>
+        Germany
+    </div>
+
+    <div class="section">
+        <strong>Contact</strong><br><br>
+        Email: <a href="mailto:Jonas.Steinhaeuser@ngscopes.com">Jonas.Steinhaeuser@ngscopes.com</a>
+    </div>
+
+    <div class="section">
+        <strong>Responsible for content according to § 18 MStV</strong><br><br>
+        Jonas Steinhäuser-Meerz<br>
+        Address as above
+    </div>
+
+    <div class="section">
+        <strong>Disclaimer</strong><br><br>
+        Liability for contents of this website is limited according to applicable law. 
+        As a service provider, we are responsible for our own content on these pages under general laws.
+    </div>
+
+    <a class="back" href="index.html">← BACK TO HOME</a>
+</div>
+
+</body>
+</html>
