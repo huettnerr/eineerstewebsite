@@ -16,8 +16,9 @@ body {
 	font-family: 'Inter', sans-serif;
 	background: #0f2027;
 	color: white;
-	height: 100vh;
+	height: 100dvh;
 	display: flex;
+	flex-direction: column; 
 	justify-content: center;
 	align-items: center; /* vertikal zentriert */
 	overflow: hidden;   /* Body scrollt nicht */
@@ -184,7 +185,8 @@ footer {
 	text-align: center;
 	font-size: 15px;
 	opacity: 0.8;
-	margin-top: 20px; /* Abstand zum Inhalt */
+	margin-top: auto; /* Abstand zum Inhalt */
+	padding-bottom: 20px;
 }
 
 footer a {
